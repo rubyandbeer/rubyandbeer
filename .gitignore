@@ -7,3 +7,5 @@
 *.project
 .DS_Store
 *.tmproj
+Capfile
+config/deploy.rb
