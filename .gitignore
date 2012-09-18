@@ -1,10 +1,9 @@
-/.bundle        # bundler config
-/db/*.sqlite3   # sqlite database files
-/log/*.log      # log files
-/tmp            # temp files
-/doc            # docs
-*.swp           # swap files
-*.project       # eclipse project configuration file
-.DS_Store       # mac finder file
-*~              # i don't know
-*.tmproj        # textmate project configuration file
+/.bundle
+/db/*.sqlite3
+/log/*.log
+/tmp
+/doc
+*.swp
+*.project
+.DS_Store
+*.tmproj
