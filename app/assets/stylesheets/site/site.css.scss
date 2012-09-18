@@ -1,0 +1,157 @@
+/*
+ *= require_self
+ *= require site/960_24_col
+ */
+
+ $first_color: #bf1402; 
+ $second_color: #421300;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body { font-family: 'Muli', sans-serif; }
+
+header {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAH0lEQVQIW2O8d+/efwY0ICgoyMBID4n3799jWA5yCwB++BbPvc4utQAAAABJRU5ErkJggg==);
+  padding-bottom: 10px;
+  padding-top: 30px;
+  height: 70px;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.9rem;
+  color: rgba(255, 255, 255, .8);
+  margin-top: 1.6rem;
+  margin-bottom: 1.0rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+  margin-top: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+p + p { margin-top: 1.0rem; }
+
+.logo { text-align: center; }
+.logo-ruby {
+  width: 120px;
+  margin-top: -25px;
+}
+
+.participar h1 { color: #000; }
+.banner-text p {
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.0rem;
+}
+
+.banner {
+  height: 300px;
+  background: $first_color;
+}
+.banner, .participar, .rb {
+  font-family: 'Quicksand', sans-serif;
+}
+.banner-bottom { height: 100px; }
+.rb, .banner-bottom { background: $second_color; }
+.participar, .rb {
+  padding-bottom: 2.6rem;
+  margin-top: 30px;
+}
+.rb { color: rgba(255, 255, 255, .8); }
+
+.menu-container { 
+  a {
+    color: #808080;
+    display: block;
+    float: left;
+    font-size: 1.4em;
+    margin: 10px 0px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    &:hover { color: #bf1402; }
+  }
+  .left {
+    float: right;
+    a {
+      border-right: 1px solid #c8c8c8;
+      box-shadow: 1px 0px 0px #f0f0f0;
+      text-shadow: 1px 1px 0px #fff;
+      &:last-child { margin-right: 20px; }
+    }
+  }
+  .right { 
+    float: left;
+    a {
+      border-left: 1px solid #c8c8c8;
+      box-shadow: -1px 0px 0px #f0f0f0;
+      text-shadow: 1px 1px 0px #fff;
+      &:first-child { margin-left: 20px; }
+    }
+  }
+}
+
+.banner-text {
+  background: rgba(0, 0, 0, .2);
+  margin: 10px 0px;
+  height: 220px;
+  padding: 0rem 1.9rem;
+  text-shadow: 1px 1px 0px #421300; 
+}
+
+.content { margin-top: 30px; }
+
+.image {
+  border: 1px solid #b0b0b0;
+  box-shadow: 0px 1px 4px #b0b0b0;
+  height: 100px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  p {
+    background: #b0b0b0;
+    height: 20px;
+    padding: 40px 0px;
+    text-align: center;
+  }
+}
+
+.participar {
+  form { text-align: center; }
+  input[type=email], input[type=text] {
+    border: 1px solid #bf1402;
+    height: 40px;
+    margin: 10px 0px;
+    width: 600px;
+  }
+  input[type=email]:focus, input[type=text]:focus {
+    background: #fbfbfb;
+    box-shadow: 0px 0px 5px 2px #bf1402;
+  }
+  input[type=submit] {
+    background: #bf1402;
+    border: 2px solid #bf1402;
+    box-shadow: inset 2px 2px 0px rgba(255, 255, 255, .6), inset -2px -2px 0px rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.0rem;
+    padding: 10px;
+  }
+}
